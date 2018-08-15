@@ -8,7 +8,20 @@ import {Component } from '@angular/core'
 
 export class TestComponent{
   public listaElemento = 'Este es un componente adicional que funciona';
-  constructor(){
+  public nombre:string ='Raphael Andrey Martínez Velasquez';
+  public edad:number = 22;
+  public hombre:boolean=true;
+  public personas:Array<any>= [
+'raphael',
+'martinez',
+'edad'
 
-  }
+  ] 
+  constructor(){
+        this.testMetodo();
+      }
+
+      testMetodo(){
+        console.log(this.personas);
+      }
 }
